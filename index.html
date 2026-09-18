@@ -1,26 +1,25 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lorem Ipsum</title>
+    <title>Golden Sneakers</title>
 
     <style>
         /* =========================================================
            VARIÁVEIS DA PALETA
-           Altere somente estes valores para mudar as cores do site.
            ========================================================= */
         :root {
-            --azul-escuro: #0b1f3a;
-            --azul: #145da0;
-            --azul-medio: #1f7acb;
-            --azul-claro: #dceeff;
-            --azul-fundo: #f4f8fc;
+            --preto: #080808;
+            --preto-medio: #151515;
+            --dourado: #d4af37;
+            --dourado-claro: #f1d875;
+            --dourado-fundo: #fff8dc;
             --branco: #ffffff;
-            --texto: #1f2937;
-            --borda: #c7d9ea;
-            --sombra: rgba(11, 31, 58, 0.12);
+            --texto: #222222;
+            --borda: #d4af37;
+            --sombra: rgba(0, 0, 0, 0.20);
         }
 
         * {
@@ -37,11 +36,11 @@
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
             color: var(--texto);
-            background: var(--azul-fundo);
+            background: #f5f5f5;
         }
 
         header {
-            background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+            background: linear-gradient(135deg, var(--preto), var(--preto-medio));
             color: var(--branco);
             text-align: center;
             padding: 48px 20px;
@@ -50,6 +49,7 @@
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: var(--dourado);
         }
 
         header p {
@@ -59,8 +59,8 @@
         }
 
         nav {
-            background: var(--branco);
-            border-bottom: 1px solid var(--borda);
+            background: var(--preto);
+            border-bottom: 2px solid var(--dourado);
             box-shadow: 0 2px 8px var(--sombra);
             position: sticky;
             top: 0;
@@ -78,7 +78,7 @@
 
         nav a {
             display: block;
-            color: var(--azul-escuro);
+            color: var(--branco);
             text-decoration: none;
             font-weight: bold;
             padding: 8px 16px;
@@ -86,8 +86,8 @@
         }
 
         nav a:hover {
-            background: var(--azul-claro);
-            color: var(--azul);
+            background: var(--dourado);
+            color: var(--preto);
         }
 
         main {
@@ -105,13 +105,13 @@
         }
 
         h2 {
-            color: var(--azul-escuro);
+            color: var(--preto);
             margin-bottom: 18px;
             font-size: 1.8rem;
         }
 
         h3 {
-            color: var(--azul);
+            color: #b18a18;
             margin: 24px 0 10px;
         }
 
@@ -128,8 +128,8 @@
         }
 
         .destaque {
-            background: var(--azul-claro);
-            border-left: 5px solid var(--azul-medio);
+            background: var(--dourado-fundo);
+            border-left: 5px solid var(--dourado);
             padding: 20px;
             border-radius: 8px;
             margin-top: 20px;
@@ -144,7 +144,7 @@
 
         figure {
             margin: 0;
-            background: var(--azul-fundo);
+            background: #eeeeee;
             border: 1px solid var(--borda);
             border-radius: 10px;
             overflow: hidden;
@@ -160,15 +160,17 @@
         figcaption {
             padding: 12px 14px;
             font-size: 0.9rem;
-            color: var(--azul-escuro);
+            color: var(--preto);
+            font-weight: bold;
         }
 
         footer {
-            background: var(--azul-escuro);
+            background: var(--preto);
             color: var(--branco);
             text-align: center;
             padding: 30px 20px;
             margin-top: 50px;
+            border-top: 2px solid var(--dourado);
         }
 
         footer p {
@@ -187,160 +189,119 @@
             .galeria {
                 grid-template-columns: 1fr;
             }
-
-            figure img {
-                height: 230px;
-            }
         }
     </style>
 </head>
 
 <body>
 
-    <header id="inicio">
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    <header>
+        <h1>GOLDEN SNEAKERS</h1>
+        <p>Estilo, conforto e qualidade para deixar seu visual ainda melhor.</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#inicio">Lorem</a></li>
-            <li><a href="#sobre">Ipsum</a></li>
-            <li><a href="#conteudo">Dolor</a></li>
-            <li><a href="#galeria">Sit Amet</a></li>
-            <li><a href="#contato">Consectetur</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#tenis">Tênis</a></li>
+            <li><a href="#detalhes">Detalhes</a></li>
+            <li><a href="#oferta">Oferta</a></li>
         </ul>
     </nav>
 
     <main>
 
-        <section id="sobre">
-            <h2>Lorem Ipsum Dolor</h2>
+        <section id="inicio">
+            <h2>Seu próximo tênis está aqui</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                tincidunt, lorem quis consequat volutpat, nisl neque feugiat
-                sapien, vitae posuere lorem ipsum sed justo.
-            </p>
-
-            <p>
-                Curabitur euismod, neque vitae vestibulum tincidunt, mauris
-                libero luctus sapien, vitae tincidunt neque lorem sed erat.
-                Donec vel augue at ipsum interdum tincidunt.
+                Conheça nossa coleção de tênis modernos, feitos para quem
+                gosta de conforto e estilo no dia a dia.
             </p>
 
             <div class="destaque">
+                <h3>🔥 Oferta especial</h3>
                 <p>
-                    <strong>Lorem ipsum:</strong> dolor sit amet, consectetur
-                    adipiscing elit. Praesent commodo, nisl vitae tincidunt
-                    feugiat, justo erat consequat lorem, vitae porta ipsum
-                    sapien sed arcu.
+                    Aproveite a promoção e garanta seu novo tênis com um
+                    visual moderno e diferenciado.
                 </p>
             </div>
         </section>
 
-        <section id="conteudo">
-            <h2>Consectetur Adipiscing</h2>
-
-            <h3>Lorem Ipsum</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse potenti. Mauris consequat, justo vitae posuere
-                tincidunt, libero lorem commodo erat, sed interdum neque
-                lectus non lorem.
-            </p>
-
-            <h3>Dolor Sit Amet</h3>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium. Ut enim ad minima veniam,
-                quis nostrum exercitationem ullam corporis suscipit.
-            </p>
-
-            <h3>Lista Lorem</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Consectetur adipiscing elit.</li>
-                <li>Integer tincidunt lorem ipsum.</li>
-                <li>Praesent commodo sapien.</li>
-                <li>Vestibulum vitae neque.</li>
-            </ul>
-
-            <h3>Lista Numerada</h3>
-            <ol>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Curabitur vitae lorem ipsum.</li>
-                <li>Praesent interdum consectetur.</li>
-            </ol>
-        </section>
-
-        <section id="galeria">
-            <h2>Lorem Ipsum Imaginibus</h2>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia curae.
-            </p>
+        <section id="tenis">
+            <h2>Conheça nossos modelos</h2>
 
             <div class="galeria">
 
-                <!-- Imagem publicada em página sobre o 3º CPM -->
                 <figure>
-                    <img
-                        src="https://cpmlondrina.com.br/wp-content/uploads/2022/06/3cpm_lonResultado.jpg"
-                        alt="Lorem ipsum dolor sit amet"
-                    >
-                    <figcaption>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </figcaption>
-                </figure>
-
-                <!-- Imagem da visita ao 3º CPM em Cornélio Procópio,
-                     publicada pela Polícia Militar do Paraná -->
-                <figure>
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVCV9Epg8NdzqFd1xhm_6IMjM9B4JHKU1wyrzPZ186uCFatEFJqLYHWc&s=10"
-                        alt="Lorem ipsum consectetur adipiscing"
-                    >
-                    <figcaption>
-                        Lorem ipsum consectetur adipiscing elit, sed do eiusmod.
-                    </figcaption>
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+                         alt="Tênis esportivo vermelho">
+                    <figcaption>Tênis Street — R$ 299,90</figcaption>
                 </figure>
 
                 <figure>
-                    <img
-                        src="https://folhadonortepr.com.br/wp-content/uploads/2022/11/PAG-CORN-GOV-COL-MILITAR02.jpg"
-                        alt="Lorem ipsum dolor"
-                    >
-                    <figcaption>
-                        Lorem ipsum dolor sit amet, sed do eiusmod tempor.
-                    </figcaption>
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=80"
+                         alt="Tênis esportivo">
+                    <figcaption>Tênis Premium — R$ 399,90</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80"
+                         alt="Tênis casual">
+                    <figcaption>Tênis Urban — R$ 349,90</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80"
+                         alt="Tênis esportivo preto">
+                    <figcaption>Tênis Black — R$ 429,90</figcaption>
                 </figure>
 
             </div>
         </section>
 
-        <section id="contato">
-            <h2>Lorem Ipsum Contactum</h2>
+        <section id="detalhes">
+            <h2>Por que escolher nossos tênis?</h2>
+
+            <ul>
+                <li>Design moderno e confortável.</li>
+                <li>Materiais de qualidade.</li>
+                <li>Modelos para diferentes estilos.</li>
+                <li>Excelente opção para o dia a dia.</li>
+            </ul>
+
+            <h3>Características</h3>
+
+            <ol>
+                <li>Solado confortável.</li>
+                <li>Material resistente.</li>
+                <li>Visual moderno.</li>
+                <li>Várias opções de modelos.</li>
+            </ol>
+        </section>
+
+        <section id="oferta">
+            <h2>Oferta por tempo limitado</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque eget augue vitae lorem tincidunt pellentesque.
+                Escolha seu modelo favorito e aproveite as condições
+                especiais da Golden Sneakers.
             </p>
 
-            <p>
-                Donec ullamcorper, sapien vitae interdum posuere, lorem ipsum
-                luctus neque, vitae commodo nisl justo ac erat.
-            </p>
+            <div class="destaque">
+                <h3>⭐ Golden Sneakers</h3>
+                <p>
+                    Estilo que combina com você.
+                </p>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>© Lorem Ipsum — Dolor Sit Amet</p>
+        <p>Golden Sneakers</p>
+        <p>Estilo e conforto em cada passo.</p>
     </footer>
 
 </body>
-</html>
+</html>            
